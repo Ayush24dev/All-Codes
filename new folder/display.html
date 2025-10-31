@@ -1,0 +1,142 @@
+<!--display controls how an element is appearing on the page weather it comes in row/column or starts with a new line-->
+
+
+<!--
+display : block - take the full width avilable and starts with a new line can give hight ,width marging and padding
+ex: div, p, h1-h6 ,section, article etc
+
+display: inline - doesn't start with new line,
+can't give height, width,
+it will take only the required width for its content
+ex: span, a, b
+
+display: inline-block - acts as inline but allows to set width, height like block
+-->
+
+<!--display : flex
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        /*display: block; */
+        .box {
+            display: block;
+            background-color: blue;
+            margin: 10px;
+
+        }
+
+        span {
+            display: inline;
+            padding: 10px;
+            color: "white";
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .btn {
+            /*  visibility: hidden;*/
+            display: inline-block;
+            background-color: rgb(9, 225, 59);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 5px;
+
+
+        }
+
+        .hidden {
+            /* display: none;*/
+            background-color: aqua;
+        }
+
+        .flex {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+            /*flex-direction:column;*/
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            gap: 20px;
+        
+
+        }
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="width: 100px;">Block 1</div>
+    <div class="box">Block 2</div>
+    <!--selector: id,class,tags,combination-->
+
+    <p>MY favourite colors are
+        <span class="red">Red</span>
+        <span class="blue">Blue</span>
+        <span class="green">Green</span>
+        <span class="yellow">Yellow</span>
+    </p>
+
+    <div style="border: 2px solid black;">
+        <div class="hidden">Likes</div>
+
+    </div>
+
+    <div style="border: 2px solid black;">
+        <div class="btn">Share</div>
+        <div class="btn">Comment</div>
+    </div>
+    <div class="flex">
+      <div>
+          <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+            alt="">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>abc abc abc abc abc abc</p>
+      </div><div>
+          <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+            alt="">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>abc abc abc abc abc abc</p>
+      </div><div>
+          <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+            alt="">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>abc abc abc abc abc abc</p>
+      </div><div>
+          <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+            alt="">
+        <h3>Lorem ipsum dolor sit</h3>
+        <p>abc abc abc abc abc abc</p>
+      </div>    
+        
+    </div>
+</body>
+
+</html>

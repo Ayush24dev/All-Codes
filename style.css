@@ -1,0 +1,36 @@
+.container{
+    background: palegoldenrod;
+}
+body{
+    background-image: url("https://t4.ftcdn.net/jpg/02/67/40/21/240_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg");
+    /*specifies the size of background-image: ; */
+    background-size: cover;
+    /* specifies  how the background-image are repeating */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode:darken;
+    background-position: center;
+    backdrop-filter: blur(15px);
+
+   /* background-color:blue; */
+
+   /*background: linear-gradient(rgb(187, 3, 3),rgb(116, 58, 173),rgb(215, 67, 92));
+   width: 100vw;
+   height: 100vh;
+
+    font-family:cursive;
+}
+    h1{
+
+        color: brown;
+    /* color:rgb(191, 67, 67); */
+}
+p{
+    color: blue;
+}
+a{
+    color: blueviolet;
+}
+strong{
+    color: beige;
+}

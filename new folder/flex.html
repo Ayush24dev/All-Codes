@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Navbar</title>
+
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+         font-family: 'Times New Roman', Times, serif;
+         box-sizing: border-box;
+         
+        }
+
+        nav{
+            background: linear-gradient(rgb(158, 255, 168),rgb(169, 201, 255));
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: hsl(240, 100%, 50%);
+        }
+
+        .menu{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .menu li a{
+            text-decoration: none;
+            font-weight: 500;
+            color: purple;
+            transition: 0.3s ease-in;
+
+        }
+        .menu li a:hover{
+            color: greenyellow;
+            background-color: black;
+            font-size: 1.2rem;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .btn{
+            background-color: lab(46.22% 66.5 47.95);
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 8px gray;
+            transition: 0.3s ease;
+        }
+        .btn:hover{
+            background-color: rgb(219, 41, 172);
+            scale: 105%;
+           /* transform: translateX(50%);*/
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-laptop"></i>
+            Hanumant Tech
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="/form.html">form</a>
+            </li>
+
+            <li>
+                <a href="/css.html">css</a>
+            </li>
+
+            <li>
+                <a href="/style.css">style</a>
+            </li>
+        </ul>
+
+        <button class="btn">Signup</button>
+    </nav>
+
+</body>
+
+</html>

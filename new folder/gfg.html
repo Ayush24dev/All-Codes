@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GFG</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(#6a86c7,white);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 5px 25px;
+        
+    }
+    .list ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+   
+    .fa-language,.fa-bell, .fa-moon{
+        background-color: rgb(226, 226, 229);
+        padding: 7px;
+        border-radius: 50%;
+        margin: 2px;
+    }
+    .sign{
+        background-color: rgb(50, 43, 43);
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 100px;
+        padding: 30px;
+    }
+    
+    .search input{
+        
+        background-color: white;
+        border-radius: 8px;
+        width: 500px;
+        padding: 15px;
+        margin-right: -10px;
+         border: none;
+    }
+    .search i{
+        background-color: rgb(15, 136, 4);
+        padding: 16px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        color: white;
+        border: none;
+        
+    }
+    input[placeholder]{
+        font-size: medium;
+        color: rgba(218, 214, 214, 0.788);
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/GeeksForGeeks_logo.png/1280px-GeeksForGeeks_logo.png" width="50" alt="GFG">
+        </div>
+        <div class="list">
+            <ul>
+                <li>Course <i class="fa-solid fa-angle-down"></i> </li>
+                <li>Tutorial <i class="fa-solid fa-angle-down"></i></li>
+                <li>Practice <i class="fa-solid fa-angle-down"></i></li>
+                <li>Job <i class="fa-solid fa-angle-down"></i> </li>
+            </ul>
+         
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-language"></i>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-bell"></i>
+            <button class="sign">Signin</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="searchtext">
+            <h2 style="font-size: xx-large;">GeeksforGeeks Courses</h2>
+            <p style="font-size: large;">
+                Interactive LIVE & Self-Paced Courses
+                <br>
+                <i class="fa-solid fa-phone"></i>3456789098
+            </p>
+        </div>
+        <div class="search">
+            <input type="text"
+            placeholder="What do you want to learn today">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        background: linear-gradient(rgb(225, 232, 232),rgb(255, 209, 250));
+        padding: 5px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+    ul li{
+        position: relative;
+    }
+    ul li a{
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+        padding: 10px;
+        color: black;
+    }
+    ul li a:hover{
+        color: blue;
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: aliceblue;
+        min-width: 200px;
+        box-shadow: 0 4px 8px black;
+        border-radius: 10px;
+        z-index: 1;   
+    }
+
+    .dropdown a{
+        display: block;
+        padding: 10pz 20px;
+        text-decoration: none;
+        transition: 0.3s;
+        background-color: rgb(214, 212, 210);
+    }
+
+    .dropdown a:hover{
+        background-color: antiquewhite;
+        color: rgb(96, 15, 15);
+    }
+
+    ul li:hover .dropdown{
+        display: block;
+    }
+
+</style>
+<body>
+    
+    <nav>
+        <div>
+            <img src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg" width="50" alt="Logo">
+            Brand Name
+        </div>
+
+        <ul>
+            <li>
+                <a href="/css.html">Home</a>
+            </li>
+            <li>
+                <a href="/profile.html">Services</a>
+                <div class="dropdown">
+                    <a href="#">Web Devlopment</a>
+                    <a href="#">App Devlopment</a>
+                    <a href="#">Software Devlopment</a>
+                </div>
+            </li>
+            <li>
+                <a href="/semantic tags.html">About</a>
+            </li>
+            <li>
+                <a href="/login page.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+      
+    
+</body>
+</html>

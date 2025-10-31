@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgb(111, 111, 238), rgb(222, 218, 218))
+    }
+
+    .nav {
+        padding: 5px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+
+    }
+
+    .list ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .fa-language,
+    .fa-bell,
+    .fa-moon {
+        background-color: rgb(92, 90, 89);
+        padding: 7px;
+        border-radius: 50%;
+        margin: 2px;
+
+    }
+
+    .sign {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        align-items: center;
+        font-weight: 1000;
+    }
+
+    .search i {
+        background-color: green;
+        padding: 10px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        color: white;
+        border: none;
+
+
+    }
+
+    .search input {
+        background-color: white;
+        border-radius: 8px;
+        width: 500px;
+        padding: 10px;
+        margin-right: -10px;
+        border: none;
+    }
+
+    .fa-magnifying-glass {
+        background-color: rgb(120, 227, 20);
+        width: auto;
+    }
+
+    .Some {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 50px;
+        width: 90vw;
+        height: 80vh;
+        background: rgb(245, 242, 242);
+        align-content: center;
+        justify-content: space-between;
+        font-weight: 200;
+        border-top-left-radius: 1%;
+        border-top-right-radius: 1%;
+    }
+
+    .Some li {
+        display: flex;
+
+    }
+
+    .Pure {
+        align-items: flex-start;
+        margin: 3px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(12, 12, 12, 0.08);
+        padding: 10px;
+    }
+    .backend{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cards{
+        display: flex;
+    }
+
+    
+</style>
+
+<body>
+
+    <div class="nav">
+        <div>
+            <img src="https://img.icons8.com/?size=512&id=AbQBhN9v62Ob&format=png" width="50" alt="GFG">
+        </div>
+        <div class="list">
+            <ul>
+                <li>Course<i class="fa-solid fa-angle-down"></i></li>
+                <li>Tutorial<i class="fa-solid fa-angle-down"></i></li>
+                <li>Practice<i class="fa-solid fa-angle-down"></i></li>
+                <li>Job<i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-language"></i>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-bell"></i>
+            <button class="sign">Sign In</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <h2>GeeksforGeeks Courses</h2>
+            <p>Interactive LIVE & Self Paced Courses<br>
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/phone-call-icon.png"
+                    width="10" alt="Call">
+                08069289001
+            </p>
+        </div>
+        <div class="search">
+
+            <input type="text" placeholder="What do you want to learn today">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <div class="Some">
+        <div class="backend">
+            <ul>
+                <li>Popular</li>
+            </ul>
+            <ul>
+                <li>View all</li>
+            </ul>
+        </div>
+      <div class="cards">
+          <div class="Pure">
+
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250927162400294833/generative_ai_training_program.webp"
+                width="300" alt="GFG">
+            <p> <img src="https://static.vecteezy.com/system/resources/thumbnails/041/644/043/small/3d-green-rising-arrow-signifying-growth-icon-png.png"
+                    width="20" alt="growth">
+                14k+ interested Geeks</p>
+            <h2>Generative AI Training Program-Live</h2>
+            <p> <img src="https://lh5.googleusercontent.com/proxy/Qg-TN7bo9GftepucHLnTamYN-nBp-91W0o5AabzFJJW7jTeHiEvue4-lnXdnurL2y544U1DCp-8KdgGeC-mySRaJdUKuHUcA0wd1JKNySgU"
+                    width="20">
+                Beginner to Advance<br>
+                <img src="https://brandeps.com/icon-download/P/People-icon-05.png" width="20">
+                2 Seats left
+            </p>
+            <h3> ₹14999<small><del>₹19999</del></small></h3>
+            <button class="explore">Explore</button>
+        </div>
+        <div class="Pure">
+
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250929101624249259/tech_interview.webp"
+                width="300" alt="GFG">
+            <p> <img src="https://static.vecteezy.com/system/resources/thumbnails/041/644/043/small/3d-green-rising-arrow-signifying-growth-icon-png.png"
+                    width="20" alt="growth">
+                376k+ interested Geeks
+            <div style="margin-left:auto">⭐ 4.9</div>
+            </p>
+            <h2>Generative AI Training Program-Live</h2>
+            <p> <img src="https://lh5.googleusercontent.com/proxy/Qg-TN7bo9GftepucHLnTamYN-nBp-91W0o5AabzFJJW7jTeHiEvue4-lnXdnurL2y544U1DCp-8KdgGeC-mySRaJdUKuHUcA0wd1JKNySgU"
+                    width="20">
+                Beginner to Advance<br>
+            </p>
+            <h3>₹17999<small><del>₹29999</del></small></h3>
+            <button class="explores">Explore</button>
+        </div>
+        <div class="Pure">
+
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250929111502388618/backend_development.webp"
+                width="300" alt="GFG">
+            <p> <img src="https://static.vecteezy.com/system/resources/thumbnails/041/644/043/small/3d-green-rising-arrow-signifying-growth-icon-png.png"
+                    width="20" alt="growth">
+                14k+ interested Geeks
+            <div style="margin-left:auto">⭐ 4.6</div>
+            </p>
+            <h2>Generative AI Training Program-Live</h2>
+            <p> <img src="https://lh5.googleusercontent.com/proxy/Qg-TN7bo9GftepucHLnTamYN-nBp-91W0o5AabzFJJW7jTeHiEvue4-lnXdnurL2y544U1DCp-8KdgGeC-mySRaJdUKuHUcA0wd1JKNySgU"
+                    width="20">
+                Beginner to Advance<br>
+            </p>
+            <h3> ₹14999<small><del>₹19999</del></small></h3>
+            <button class="backend">Explore</button>
+
+        </div>
+
+        <div class="Pure">
+
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250929101847831129/ml_ds.webp" width="300"
+                alt="GFG">
+            <p> <img src="https://static.vecteezy.com/system/resources/thumbnails/041/644/043/small/3d-green-rising-arrow-signifying-growth-icon-png.png"
+                    width="20" alt="growth">
+                14k+ interested Geeks
+            <div style="margin-left:auto">⭐ 4.7</div>
+            </p>
+            <h2>Generative AI Training Program-Live</h2>
+            <p> <img src="https://lh5.googleusercontent.com/proxy/Qg-TN7bo9GftepucHLnTamYN-nBp-91W0o5AabzFJJW7jTeHiEvue4-lnXdnurL2y544U1DCp-8KdgGeC-mySRaJdUKuHUcA0wd1JKNySgU"
+                    width="20">
+                Beginner to Advance<br>
+                <img src="https://brandeps.com/icon-download/P/People-icon-05.png" width="20">
+                4 Seats left
+            </p>
+            <h3>₹5999<small><del>₹9999</del></small></h3>
+            <button class="img">Explore</button>
+        </div>
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>

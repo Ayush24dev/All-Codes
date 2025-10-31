@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 3fr 2fr 1fr;
+            gap: 10px;
+
+        }
+
+        .item{
+            background-color: beige;
+        }
+        section{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .card{
+            background: linear-gradient(yellow,red);
+            height: 100px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.8s ease-in;
+            box-shadow: 0 2px 4px black;
+        }
+        .card:hover{
+            scale: 110%;
+            background: linear-gradient(white,blue);
+        }
+        /* hover focus nth-child and so onn */
+        .input{
+            border: 5px green solid;
+            border-radius: 5px;
+        }
+        .input:focus{
+            border-radius: 5px;
+            box-shadow: 0 0 8px black;
+            outline: none;
+        }
+        .btn{
+            background-color: brown;
+            color: white;
+        }
+        .btn:active{
+            background-color: blue;
+            columns: white;
+        }
+        a{
+            color: blue;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+        }
+        .box{
+             background-color: rgb(106, 106, 216);
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <section>
+        <h2>My Projects</h2>
+
+        <div class="container">
+            <div class="card">Ecommerce App</div>
+            <div class="card">Spotify Clone</div>
+            <div class="card">Chat App</div>
+            <div class="card">Weather App</div>
+            <div class="card">University Website</div>
+            <div class="card">Technical Tnstitute App</div>
+        </div>
+    </section>
+
+    <h1>Pseudo Classes</h1>
+    <input class="input" type="text" placeholder="Enter name">
+    <input type="text" placeholder="Enter email">
+
+    <button class="btn">Click</button>
+    
+    <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwTTMvNjRg9BJJzMlJzEhMSkxRKM3LLEstKs4sqQQAp9ILIA&q=allahabad+university&oq=allh&gs_lcrp=EgZjaHJvbWUqDAgBEC4YChixAxiABDIGCAAQRRg5MgwIARAuGAoYsQMYgAQyBwgCEAAYgAQyDwgDEC4YChiDARixAxiABDIPCAQQABgKGIMBGLEDGIAEMgkIBRAAGAoYgAQyBggGEEUYPDIGCAcQBRhA0gEIMjgwOGowajeoAgiwAgHxBZBiTT47ZBbw&sourceid=chrome&ie=UTF-8">Link1</a>
+    <a href="https://alldunivcuet.samarth.edu.in/">Link2</a>
+    <a href="https://github.com/Ayush24dev">link3</a>
+
+
+
+
+
+    <div class="container2">
+      <div class="box">All</div>
+      <div class="box">DSA/Placements</div>
+      <div class="box">Certification-ML & Data Science</div>
+      <div class="box">GATE</div>
+      <div class="box">Devlopment</div>
+      <div class="box">Cloud/DevOps</div>
+      <div class="box">Programming Languages</div>
+      <div class="box">Exam Preparation</div>
+    </div>
+
+</body>
+</html>
+
+
+
